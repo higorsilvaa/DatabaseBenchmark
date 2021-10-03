@@ -240,11 +240,9 @@ if __name__ == '__main__':
 		N = 100
 		
 		auxS = run_delete_string(cursor, N)
-		run_insert_string(cursor, N)
 		time_average.append(sum(auxS)/float(len(auxS)))
 		
 		auxN = run_delete_number(cursor, N)
-		run_insert_number(cursor, N)
 		time_average.append(sum(auxN)/float(len(auxN)))
 		
 		gera_grafico(range(1,N+1), auxS, auxN, titleGraf='Deleção de %i pontos'%(N))
@@ -252,11 +250,9 @@ if __name__ == '__main__':
 		N = 1000
 		
 		auxS = run_delete_string(cursor, N)
-		run_insert_string(cursor, N)
 		time_average.append(sum(auxS)/float(len(auxS)))
 		
 		auxN = run_delete_number(cursor, N)
-		run_insert_number(cursor, N)
 		time_average.append(sum(auxN)/float(len(auxN)))
 		
 		gera_grafico(range(1,N+1), auxS, auxN, titleGraf='Deleção de %i pontos'%(N))
@@ -264,11 +260,9 @@ if __name__ == '__main__':
 		N = 10000
 		
 		auxS = run_delete_string(cursor, N)
-		run_insert_string(cursor, N)
 		time_average.append(sum(auxS)/float(len(auxS)))
 		
 		auxN = run_delete_number(cursor, N)
-		run_insert_number(cursor, N)
 		time_average.append(sum(auxN)/float(len(auxN)))
 		
 		gera_grafico(range(1,N+1), auxS, auxN, titleGraf='Deleção de %i pontos'%(N))
@@ -276,11 +270,9 @@ if __name__ == '__main__':
 		N = 100000
 		
 		auxS = run_delete_string(cursor, N)
-		run_insert_string(cursor, N)
 		time_average.append(sum(auxS)/float(len(auxS)))
 		
 		auxN = run_delete_number(cursor, N)
-		run_insert_number(cursor, N)
 		time_average.append(sum(auxN)/float(len(auxN)))
 		
 		gera_grafico(range(1,N+1), auxS, auxN, titleGraf='Deleção de %i pontos'%(N))
